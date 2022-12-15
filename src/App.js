@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Tutor from './components/Tutor';
+import ParentTutor from './components/ParentTutor';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Tutor name= 'Sylvester' fullName='Sylvester Ouma' department='Software Engineering' knowledgeContribution='Data as Objects' button = '<button>Hide</button>'>
+        </Tutor>
+      <Tutor name= 'Edward'  fullName='Edward Bwoga' department='Security Engineering' knowledgeContribution='XML to XML Strings' button = '<button>Hide</button>'>
+        </Tutor>
+      <Tutor name= 'Maurice'  fullName='Maurice Otieno' department='Database Administration' knowledgeContribution=' Going Bitwise Way' button = '<button>Hide</button>'>
+      </Tutor> */}
+
+      <ParentTutor />
     </div>
   );
 }
