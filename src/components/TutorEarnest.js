@@ -1,12 +1,12 @@
 import React from 'react'
 
 function TutorEarnest(props) {
-  const {fullName, department, knowledgeContribution} = props
+  const {moreInfoHandler} = props
     return (
       <div>
         <h2>Earnest
           <button onClick=
-            {() => props.moreInfoHandler
+            {() => moreInfoHandler
               (
                 'Earnest',
                 'Earnest Achayo',
