@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 
 import Tutor from './components/Tutor';
 import ParentTutor from './components/ParentTutor';
