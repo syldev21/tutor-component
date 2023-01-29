@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TutorEarnest from './TutorEarnest'
 import TutorSeth from './TutorSeth'
 import TutorSylvester from './TutorSylvester'
+import 'materialize-css/dist/css/materialize.min.css'
 
 class ParentTutor extends Component {
     constructor(props) {
@@ -29,13 +30,18 @@ class ParentTutor extends Component {
     
   render() {
     return (
-      <div>
-        <TutorSeth moreInfoHandler={this.moreInfo}/>
-        <br />
-        <TutorSylvester moreInfoHandler={this.moreInfo}/>
-        <br />
-        <TutorEarnest moreInfoHandler={this.moreInfo}/>
-        <br />
+      <div className='container'>
+        <div className='row'>
+          <div className='col s4'>
+           <TutorSeth moreInfoHandler={this.moreInfo}/>
+          </div>
+          <div className='col s4'>
+          <TutorSylvester moreInfoHandler={this.moreInfo}/>
+          </div>
+          <div className='col s4'>
+          <TutorEarnest moreInfoHandler={this.moreInfo}/>
+          </div>
+        </div>
         <h2>{this.state.about} {this.state.name}</h2>
         <p>Full Name: {this.state.fullName}</p>
         <p>Department: {this.state.department}</p>
